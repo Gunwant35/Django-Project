@@ -1,0 +1,160 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SGGS Portal - Easy Way to Manage</title>
+
+     
+  </head>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+
+    body{
+      background-image : url("/home/bg-king-2.jpg"); 
+    }
+    
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      list-style: none;
+      background : transparent;
+    }
+
+    .navitems .links{
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      /* background-color: bisque; */
+      height: 100%;
+      align-items: center;
+    }
+
+    a{
+      text-decoration: none;
+      padding: 1rem 1.5rem;
+      font-size: larger;
+      color: white;
+    }
+    .navitems .links a:hover{
+      text-decoration: underline;
+      transition: text-decoration 1s;
+    }
+
+    .content{
+      display: flex;
+      flex-direction: column;
+      background-image: linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)) , url("{% static "/home/bg-king-2.jpg" %}");
+      height: 100vh;
+      background-size: cover;
+      /* align-items: center; */
+    }
+
+    
+    .heading{
+      padding: 8rem 5rem ;
+      display: flex;
+      flex-direction: column;
+      background: transparent;
+      color: white;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .heading .tit{
+      font-size: 3rem ;
+      margin-bottom: 3rem;
+    }
+
+    .heading .dis{
+      /* border: 1px solid white; */
+      padding: 1rem;
+      /* border-radius: 12px; */
+    }
+
+    .buts{
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .buts button{
+      padding: 1rem;
+      width: 20rem;
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+      border-radius: 12px;
+      cursor: pointer;
+    }  
+
+    .buts button:hover{
+      background-color: white;
+      color: black;
+    }
+
+  </style>
+  <body >
+
+    
+    <!-- <h1>Hello, world!</h1> -->
+
+    
+    <div class="content">
+
+      <nav class="container">
+        <a href="#" class="logo">SGGS</a>
+        <div class="navitems">
+          <ul class="links">
+            <li class="item">
+              <a class="navlink"  href="student/">Student</a>
+            </li>
+            <li class="item">
+              <a class="navlink" href="marks/">Marks</a>
+            </li>
+            <li class="item">
+              <a class="navlink"  href="admission/">Admission</a>
+            </li>
+            <li class="item">
+              <a class="navlink" href="feedback/">Feedback</a>
+            </li>
+            <li class="item">
+              <a class="navlink"  href="view_data/">View Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+
+      <div class="heading">
+        <h1 class="tit"> SGGS Portal </h1>
+        <p class="dis"> <i> Established in 1981, Shri Guru Gobind Singhji Institute of Engineering and Technology (SGGSIET), Nanded, is one of the promising leader institutions in technical education, research and technology transfer. Since its inception, the institute is dedicated to students ,centric learning and believes in pursuing academic excellence. It is having neat, clean and green campus spread over land of 46 acres. It receives 100% grant-in aid from Government of Maharashtra. </i> </p>
+
+      </div>
+
+      <div class="buts">
+        <button class="official"><a href='http://127.0.0.1:8000/'>
+          Official Website
+          </a>
+        </button>
+  
+        <button class="mis"><a href ='https://www.ncvtmis.gov.in/'>
+          MIS Portal
+          </a>
+        </button>
+      </div>
+      
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-block">
+      
+        <form method="post">
+        {% csrf_token %}
+          <div class="title">
+            <h2>Student</h2>
+          </div>
+          <div class="info">
+            <input class="fname" type="text" name="sname" placeholder="Student Name">
+            <input type="text" name="reg_no" placeholder="Registration Number">
+            <input type="text" name="address" placeholder="Adress">
+            <input type="text" name="taluka" placeholder="Taluka">
+            <input type="text" name="district" placeholder="District">
+            <!-- {% comment %} <input type="img" name="img" value=""> {% endcomment %} -->
+            <!-- <input type="image" src="" alt="####" placeholder="Enter Your photo"> -->
+            <input type="text" name="state" placeholder="State">
+          <button type ='submit'>Submit</button>
+          </div>
+           
+        </form>
+      </div>
+</body>
+</html>
